@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/b4"
+        android:maxLines="1"
+
+        android:onClick="cerrar"
+        android:text="@string/cerrar"
+        android:textSize="15sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="10sp"
+
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toEndOf="@id/bitacora"
+        app:layout_constraintStart_toEndOf="@+id/nueva"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintWidth_percent="0.23" />
+
+    <Button
+        android:id="@+id/nueva"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeTextType="uniform"
+
+        android:background="@drawable/b3"
+        android:maxLines="1"
+        android:onClick="nueva"
+        android:text="@string/nueva"
+        android:textSize="15sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toStartOf="@id/salir"
+        app:layout_constraintStart_toEndOf="@+id/botonPegar"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintWidth_percent="0.23" />
+
+    <Button
+        android:id="@+id/botonPegar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/b2"
+        android:maxLines="1"
+        android:onClick="pegar"
+        android:text="@string/pegar"
+        android:textSize="15sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toStartOf="@id/nueva"
+        app:layout_constraintStart_toEndOf="@+id/botonCopiar"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintWidth_percent="0.23" />
+
+    <Button
+        android:id="@+id/botonCopiar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/b1"
+        android:elevation="10dp"
+        android:maxLines="1"
+        android:onClick="copiar"
+        android:text="@string/copiar"
+        android:textSize="15sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@id/botonPegar"
+        app:layout_constraintStart_toStartOf="@id/bitacora"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintWidth_percent="0.23" />
+
+    <EditText
+        android:id="@+id/bitacora"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/picture_frame"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="INGRESE SUS ANOTACIONES"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_dark"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonPegar"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

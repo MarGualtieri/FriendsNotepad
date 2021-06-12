@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Friends Notepad</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="cerrar">SALIR</string>
+    <string name="copiar">COPIAR</string>
+    <string name="nueva">NUEVA</string>
+    <string name="pegar">PEGAR</string>
+    <string name="compartir"></string>
+
+
+</resources>
